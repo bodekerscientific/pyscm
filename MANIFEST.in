@@ -1,2 +1,3 @@
 recursive-exclude docs *
-include config/*
+include config/*include versioneer.py
+include pySCM/_version.py

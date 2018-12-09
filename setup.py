@@ -1,19 +1,16 @@
-import os
-
+from os.path import join, dirname
 from setuptools import setup
 
+import versioneer
 
-# Utility function to read the README file.
-# Used for the long_description.  It's nice, because now 1) we have a top level
-# README file and 2) it's easier to type in the README file than to put a raw
-# string in below ...
+
 def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+    return open(join(dirname(__file__), fname)).read()
 
 
 setup(
     name="pySCM",
-    version="0.1.1",
+    version=versioneer.get_version(),
     author="Jared Lewis",
     author_email="jared@bodekerscientific.com",
     description="A basic simple climate model in Python",
@@ -35,7 +32,7 @@ setup(
         "matplotlib",
         "numpy"
     ],
-    project_urls={  # Optional
+    project_urls={
         "Bug Reports": "https://github.com/bodekerscientific/pyscm/issues",
         "Source": "https://github.com/bodekerscientific/pyscm/",
     },
@@ -48,4 +45,5 @@ setup(
             "wheel>=0.31.0",
         ],
     },
+    cmdclass=versioneer.get_cmdclass()
 )
