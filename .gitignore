@@ -9,3 +9,7 @@ venv
 
 # Jupyter notebooks
 *.ipynb_checkpoints*
+
+dist
+build
+*.egg-info
