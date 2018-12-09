@@ -1,14 +1,12 @@
-=================================
- pySCM - Simple Climate Model
-=================================
-
-pySCM is a simple climate model developed in Python.
-
-Contents:
+pySCM - A Simple Climate Model (SCM) written entirely in Python
+===============================================================
 
 .. toctree::
-	theory
-	code
+   :maxdepth: 2
+   :caption: Contents:
+
+   theory
+   code
 
 Indices and tables
 ==================

@@ -48,7 +48,7 @@ Description of the pySCM module
 Emission record Class
 """"""""""""""""""""""""""""""""
 
-.. autoclass:: pySCM.SimpleClimateModel.EmissionRec
+.. autoclass:: pySCM.scm.EmissionRec
    :members:
 
 
@@ -58,7 +58,7 @@ Simple Climate Model Class
 
 The Simple Climate Model class comprises only two public functions, i.e. runModel and saveOutput. The class uses the EmissionRec to store all GHG emissions that are going to be used during the model run.
 
-.. autoclass:: pySCM.SimpleClimateModel.SimpleClimateModel
+.. autoclass:: pySCM.SimpleClimateModel
    :members:
 
 """""""""""""""""""""""""""""""""""""""""
@@ -73,7 +73,7 @@ right input, these functions can be used independently of the Simple Climate Mod
 where emissions are the |CO2| emissions, numYr are the number of years the response function will be calculated for and OceanMLDepth is the ocean layer depth. More information are given in the code or
 in the 'Theory' part of this documentation.
 
-.. automodule:: pySCM.SimpleClimateModel
+.. automodule:: pySCM.scm.SimpleClimateModel
    :members: CO2EmissionsToConcs, CH4EmssionstoConcs, N2OEmssionstoConcs, CalcRadForcing, GenerateTempResponseFunction, GenerateSeaLevelResponseFunction, GenerateOceanResponseFunction, GenerateBiosphereResponseFunction, DeltaSeaWaterCO2FromOceanDIC, CalculateTemperatureChange, CalculateSeaLevelChange
 
 
