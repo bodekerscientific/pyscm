@@ -1,5 +1,9 @@
-pySCM - A Simple Climate Model (SCM) written entirely in Python
-===============================================================
+pySCM
+=====
+
+.. include:: ../README.rst
+    :start-after: sec-begin-index
+    :end-before: sec-end-index
 
 .. toctree::
    :maxdepth: 2
