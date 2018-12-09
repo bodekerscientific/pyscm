@@ -1,5 +1,5 @@
 from os.path import join, dirname
-from setuptools import setup
+from setuptools import setup, find_packages
 
 import versioneer
 
@@ -17,7 +17,7 @@ setup(
     license="MIT",
     keywords="simple climate model SCM climate science",
     url="http://pythonhosted.org/pySCM",
-    packages=['pySCM'],
+    packages=find_packages(),
     long_description=read('README.rst'),
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -36,9 +36,10 @@ setup(
         "Bug Reports": "https://github.com/bodekerscientific/pyscm/issues",
         "Source": "https://github.com/bodekerscientific/pyscm/",
     },
+    tests_require=["pytest", "pytest-cov", "codecov"],
+    setup_requires=["pytest-runner"],
     extras_require={
         "docs": ["sphinx >= 1.4", "sphinx_rtd_theme", "sphinx-autodoc-typehints"],
-        "tests": ["pytest", "pytest-cov", "codecov", "nbval", "notebook"],
         "dev": [
             "setuptools>=38.6.0",
             "twine>=1.11.0",

@@ -1,0 +1,18 @@
+language: python
+cache: pip
+dist: trusty
+python:
+- '3.6'
+before_install:
+- pip install pip --upgrade
+script:
+- python setup.py test
+after_success:
+- codecov
+deploy:
+  provider: pypi
+  user: JaredLewis
+  password:
+    secure: Cy0H9tEybgNyk/6nFRQ/5MTdc4/jgrKrzwKyXzSp8njv5iWmEjXdgSR0vG0CRWt0Lf5wS4Q5sew+9wai5x1QZIuWz6f2TEqCNXxG5XywkwfLGiGI3c6PZsK+bbRNXtB9BNtJhQMsS37XblDMgD64j9kzrqegZ+GKDC+2DMYb94HkfjfC8QlPi9lxXoW19FeN2O5926UEecT/sWjTxbALIq4TyaWh7xStZSBc4WH2Q7nMAmXaUuXw1dPI+b9QOPsnAOEalh+b4bMQjtCjA4bgSzX82AIkYYs15h46FjHUz6C1AYqoN9hrjKwCSn6p7rflLD/VuLfVK2b9n+14xHWwtxLg25MPdNVzL/XY60uxtprFSUVU7e9HClscG+2lKLs7iP1oCpgp4iWxxmKjvZI5HGcQNXa3/+e/88AHsIvLOoYwGI6wV3vPC5wCfsJQapiEO+jhgmnDQP+yazn/ku6iABuIcgSZpDITtSnNqioifDjg5wpsXwFBBDXZ0WJUsv26hvnBxcKT+ZhPGQQJ9CoeJ5P3w0lbNaOb4hCpf9Y9sQ0nkdvrUICKOSZhqW1FeF94z9q2wLvLQs/02U7TKZ+yuvSYDux5IDk7i3XYuFzUOTiq+Q7yWAoLCvhXayHhe6lEXmB8bBJgzU6XNy8jZJWPDHStdwesLi/oObuSU7k4vuE=
+  on:
+    tags: true
