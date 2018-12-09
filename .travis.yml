@@ -6,7 +6,7 @@ python:
 before_install:
 - pip install pip --upgrade
 script:
-- python setup.py test
+- python setup.py test --addopts --cov=./
 after_success:
 - codecov
 deploy:
