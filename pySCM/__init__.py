@@ -1,1 +1,1 @@
-from SimpleClimateModel import *
+from .scm import SimpleClimateModel, SCMError

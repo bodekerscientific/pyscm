@@ -1,0 +1,11 @@
+# IDE configuration
+.idea
+
+# Python specific
+*.egg-info
+__pycache__
+venv
+*.pyc
+
+# Jupyter notebooks
+*.ipynb_checkpoints*
