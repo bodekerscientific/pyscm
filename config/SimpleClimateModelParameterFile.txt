@@ -3,7 +3,7 @@ Start year=1750
 End year=2100
 
 # Provide the path and file name of the GHG emissions
-File of emissions data=W:/Python/PyUnits/SimpleClimateModel/pySCM/EmissionsForSCM.dat
+File of emissions data=config/EmissionsForSCM.dat
 
 # Constants that can be adjusted.
 Ocean mixed layer depth [in meters]=75.0
