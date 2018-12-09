@@ -1,16 +1,19 @@
 pySCM
 =====
 
-.. include:: ../README.rst
-    :start-after: sec-begin-index
-    :end-before: sec-end-index
+..  toctree::
+    :maxdepth: 2
+    :caption: Contents:
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    introduction
+    theory
+    code
 
-   theory
-   code
+..  toctree::
+    :maxdepth: 2
+    :caption: Changelog:
+
+    changelog
 
 Indices and tables
 ==================

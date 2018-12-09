@@ -124,6 +124,7 @@ latex_elements = {
     # Latex figure (float) alignment
     #
     # 'figure_align': 'htbp',
+'extraclassoptions': 'openany,oneside'
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -131,7 +132,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'pySCM.tex', 'pySCM Documentation',
-     'Jared Lewis', 'manual'),
+     'Stefanie Kremser, Jared Lewis', 'manual'),
 ]
 
 
